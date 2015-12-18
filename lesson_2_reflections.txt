@@ -1,0 +1,2 @@
+Q: What happens when you initialize a repository? Why do you need to do it?
+A: Initializing creates a new repository. You need to do it whenever you need to create a new repository in a directory.
