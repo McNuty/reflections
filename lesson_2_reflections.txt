@@ -1,5 +1,20 @@
 Q: What happens when you initialize a repository? Why do you need to do it?
 A: Initializing creates a new repository. You need to do it whenever you need to create a new repository in a directory.
 
-Q; How is the staging area different from the working directory and the repository? What value do you think it offers?
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
 A: The staging area holds files before fully commiting. You can add ("git add") multiple files to staging, and then commit all at once. Useful if one feature required updates to multiple files--you could add each file to staging, and then commit all at once for one reason.
+
+Q: How can you use the staging area to make sure you have one commit per logical change?
+A: Run a diff and make sure that all changes shown affect a sigle concept. Don't commit any changes that are not related to the others.
+
+Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+A: Branches would be helpful when developing a feature that make take extra time, or not be scheduled for immediate release. One could work on the feature in the branch, and continue the other scheduled updates or bug fixes in the master. Eventually one could merge the branch with the master, once the work on the branch was finished.
+
+Q: How do the diagrams help you visualize the branch structure?
+A: By clearly showing the main path of the code, with each branch noted at exactly which point it broke from the master. Also, the diagrams clearly show which commits are unreachable.
+
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A: Merging two branches will result in a single branch will all commits (and therefore file updates) from both brances. 
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A: Auto merging is quicker, and you don't have to remember to do it. Manual merges give you complete control.
