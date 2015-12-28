@@ -1,0 +1,20 @@
+Reflections for Git Lesson 1
+
+Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+A: If an error was introduced into a newer version, one could compare versions and identify all new code, and hopefully suss out the typo or error more easily than delving through line by line.
+
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+A: Pros: Commits will be at logical intervals, if done correctly. Each version of the file will represent one logical step.
+Cons: Ripe for user error. Too many commits is TMI, and too few commits would defeat the purpose of version control and identify you as a too-cocky coder.
+
+Q: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+A: Different purposes for these systmes. Systems developed specifically for code should allow users to save multiple files in one single commit.
+
+Q: How can you use the commands git log and git diff to view the history of files?
+A: Use git log to review a master list of all commits, and use git diff [id1] [id2] to identify the differences between 2 commits.
+
+Q: How might using version control make you more confident to make changes that could break something?
+A: Knowing that the previous, working version is intact in version control would put my mind at ease. If my new code broke something, reverting would be easy.
+
+Q: Now that you have your workspace set up, what do you want to try using Git for?
+A: I want to use Git to practice version control. And so I can add it to my resume!
